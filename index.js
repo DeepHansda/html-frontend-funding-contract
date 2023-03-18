@@ -1,5 +1,5 @@
 import { ethers } from "./ethers-5.6.esm.min.js";
-import { contractAddress, abi } from "./constants";
+import { contractAddress, abi } from "./constants.js";
 
 
 
@@ -27,6 +27,7 @@ const connectWallet = async () => {
 };
 
 const fund = async () => {
+  console.log("clicked")
   if (typeof window.ethereum !== undefined) {
     try {
       const provider = new ethers.providers.Web3Provider(window.ethereum);

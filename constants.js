@@ -1,6 +1,6 @@
-const contractAddress = ""
+export const contractAddress = ""
 
-const abi = [
+export const abi = [
     {
       "inputs": [
         {
@@ -129,3 +129,4 @@ const abi = [
       "type": "function"
     }
   ]
+
